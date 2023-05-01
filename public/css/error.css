@@ -1,0 +1,39 @@
+.main {
+  display: table;
+  color: #000;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+  
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1 {
+  font-size: 3.6em;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type .5s alternate infinite;
+}
+
+.fof p {
+  font-size: 1.8em;
+}
+
+.return-btn {
+  all: unset;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0 0 #222;
+  }
+
+  to {
+    box-shadow: inset -3px 0 0 transparent;
+  }
+}

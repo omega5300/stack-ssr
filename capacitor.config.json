@@ -1,0 +1,6 @@
+{
+  "appId": "com.stackAnalyze.app",
+  "appName": "stackAnalyze",
+  "webDir": ".output",
+  "bundledWebRuntime": false
+}
