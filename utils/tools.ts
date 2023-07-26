@@ -62,6 +62,11 @@ export const queryTools: Tools[] = [
     description: 'search movies using the movieDB service'
   },
   {
+    name: 'pokemon info',
+    versionAdded: '(npm) 1.2.5',
+    description: 'search the pokemon by stats'
+  },
+  {
     name: 'twitch info',
     versionAdded: '(npm) 1.1.7',
     description: 'using the twitch api helix'

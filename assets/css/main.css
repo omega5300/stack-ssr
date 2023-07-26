@@ -37,16 +37,16 @@
 }
 
 /* all browser based on webkit */
-::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
   @apply w-[10px];
 }
 
-::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track {
   background: none;
   @apply rounded-[5px];
 }
 
-::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
   background-color: var(--theme);
   border: 2px solid var(--theme);
   @apply rounded-[10px];
@@ -57,7 +57,7 @@ body, .btns, .result {
 }
 
 body {
-  @apply min-h-screen;
+  @apply min-h-screen m-0;
   grid-template-rows: auto 1fr auto;
   background-image: var(--background);
   color: var(--theme);
@@ -218,7 +218,7 @@ body {
 }
 
 .card__info {
-  @apply w-[80vw] max-w-full m-[0.6rem_auto];
+  @apply w-[90vw] max-w-full m-[0.6rem_auto];
 }
 
 .card-btns {
@@ -302,8 +302,8 @@ body {
 }
 
 .list-item__poster {
-  width: 23vw;
-  height: 30vh;
+  width: 225px;
+  height: 318px;
 }
 
 .list-item__body, .list-item__header {
@@ -384,6 +384,10 @@ body {
 .skeleton {
   background-color: var(--medium);
   @apply h-4;
+}
+
+.stat {
+  @apply flex items-center gap-2.5 max-w-full my-1;
 }
 
 @keyframes blink {

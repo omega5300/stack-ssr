@@ -5,6 +5,17 @@ type detailsVersion = {
 
 export const versionsNotes: detailsVersion[] = [
   {
+    version: '1.9.0',
+    details: `
+      added:
+        1. new tool pokemonInfo.
+      fixed:
+          1. add a error method in tech-stack.
+          2. update modules.
+          3. fixed search in crypto market info.
+    `
+  },
+  {
     version: '1.8.0',
     details: `
       added:

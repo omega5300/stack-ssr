@@ -32,6 +32,13 @@ export default defineNuxtConfig({
       },
     }
   },
+  vite: {
+    vue: {
+      script: {
+        defineModel: true
+      }
+    }
+  },
   build: {
     transpile: [
       '@fortawesome/fontawesome-svg-core',

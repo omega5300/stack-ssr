@@ -9,6 +9,10 @@ const formatter = new Intl.ListFormat('en', {
   style: 'short',
   type: 'unit'
 })
+
+const imgError = (e: Event) => {
+  (e.target as HTMLImageElement).src = "/img/No-image-found.jpg"
+}
 </script>
 
 <template>
@@ -17,6 +21,7 @@ const formatter = new Intl.ListFormat('en', {
       <img 
         :src="`https://stack-analyze.web.app/logos/${stackData.icon}`" 
         :alt="stackData.name"
+        @error="imgError"
         class="card-image"
       >
       <figcaption class="card-title">{{ stackData.name }}</figcaption>

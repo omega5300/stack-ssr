@@ -1,27 +1,30 @@
 <script setup lang="ts">
 interface Emits {
-  (e: 'update:modelValue', id: string): void;
   (e: 'initFunction'): void;
   (e: 'clearFunction'): void;
 }
 
 interface Props {
   msg?: string;
-  modelValue: string;
   disabledInit: boolean;
   disabledClear: boolean;
 }
 
+const modelValue = defineModel<string>()
+
 const emit = defineEmits<Emits>()
 
-const { modelValue, msg, disabledClear, disabledInit } = defineProps<Props>()
+const { msg, disabledClear, disabledInit } = defineProps<Props>()
 </script>
 
 <template>
   <section>
     <fieldset class="input-box">
-      <input class="input-field" type="text" :placeholder="msg || 'enter a url'" :value="modelValue"
-        @input="emit('update:modelValue', ($event.target as HTMLInputElement).value)"
+      <input 
+        class="input-field" 
+        type="text" 
+        :placeholder="msg || 'enter a url'" 
+        v-model="modelValue"
       >
     </fieldset>
     <section class="btns">

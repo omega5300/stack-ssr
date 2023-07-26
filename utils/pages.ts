@@ -95,6 +95,11 @@ const queryPages: Tools[] = [
     icon: ['fas', 'film'],
   },
   {
+    app: 'pokemon info',
+    path: '/query/pokemon',
+    icon: ['fas', 'gamepad']
+  },
+  {
     app: 'twitch search',
     path: '/query/twitch',
     icon: ['fab', 'twitch'],

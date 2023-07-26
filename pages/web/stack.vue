@@ -22,7 +22,7 @@ const getStack = async () => {
   if (!website.value.match(startWithHttp)) return alertMsg('http or https:// is required', 'alert-warn')
 
   try {
-    apps.value = await $fetch('https://stack-analyze-api.onrender.com/stack', {
+    apps.value = await $fetch<TechStack[]>('https://stack-analyze-api.onrender.com/stack', {
       params: { url: website.value }
     })
   } catch (err) {

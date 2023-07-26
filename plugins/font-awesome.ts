@@ -13,7 +13,8 @@ import {
   faSpider, faTerminal, faCode, faInfo, faHome,
   faGaugeMed, faSearch, faWallet, faLock, faHandSpock, 
   faFileCode, faFilm, faDice, faRefresh, faClipboard,
-  faGlobe
+  faGlobe,
+  faGamepad
 } from '@fortawesome/free-solid-svg-icons'
 
 // brand icons
@@ -31,6 +32,7 @@ const icons = [
   // tools icons
   faVideoCamera, faSpider, faTerminal, faCode, faInfo, faGaugeMed, 
   faSearch, faWallet, faLock, faHandSpock, faFileCode, faFilm,
+  faGamepad,
   // password generator icons
   faDice, faRefresh, faClipboard
 ]

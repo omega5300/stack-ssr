@@ -42,6 +42,11 @@ export const instagramRecomendations: SocialMedia[] = [
     logo: instagram,
     link: "https://www.instagram.com/seyyahikaktus"
   },
+  {
+    name: "seyyahikaktus",
+    logo: instagram,
+    link: "https://www.instagram.com/seyyahikaktus"
+  },
 ];
 
 export const twitchRecomendations: SocialMedia[] = [
