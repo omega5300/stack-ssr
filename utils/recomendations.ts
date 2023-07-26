@@ -12,35 +12,35 @@ export const youtubeRecomendations: SocialMedia[] = [
   {
     name: "dorian designs",
     logo: youtube,
-    link: "https://www.youtube.com/user/DorianDesigns"
+    link: "https://www.youtube.com/@DorianDesigns"
   },
   {
     name: "bluuweb",
     logo: youtube,
-    link: "https://www.youtube.com/user/Bluuweb"
+    link: "https://www.youtube.com/@Bluuweb"
   },
   {
     name: "fazt",
     logo: youtube,
-    link: "https://www.youtube.com/channel/UCX9NJ471o7Wie1DQe94RVIg"
+    link: "https://www.youtube.com/channel/@FaztTech"
   },
   {
     name: "fernando herrera",
     logo: youtube,
-    link: "https://www.youtube.com/channel/UCuaPTYj15JSkETGnEseaFFg"
+    link: "https://www.youtube.com/channel/@DevTalles"
   },
   {
     name: "leonidas esteban",
     logo: youtube,
-    link: "https://www.youtube.com/user/LeonidasEsteban"
+    link: "https://www.youtube.com/@LeonidasEsteban"
   },
 ];
 
 export const instagramRecomendations: SocialMedia[] = [
   {
-    name: "seyyahikaktus",
+    name: "melodikaktus",
     logo: instagram,
-    link: "https://www.instagram.com/seyyahikaktus"
+    link: "https://www.instagram.com/melodikaktus"
   },
   {
     name: "seyyahikaktus",
@@ -60,6 +60,11 @@ export const twitchRecomendations: SocialMedia[] = [
     name: "dannyagii",
     logo: twitch,
     link: "https://www.twitch.tv/dannyagii"
+  },
+  {
+    name: "japonHR",
+    logo: twitch,
+    link: "https://www.twitch.tv/japon_hr"
   },
 ];
 
