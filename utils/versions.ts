@@ -5,8 +5,8 @@ type detailsVersion = {
 
 export const versionsNotes: detailsVersion[] = [
   {
-    details: '2.0.0',
-    version: `
+    version: '2.0.0',
+    details: `
       added:
         1. wallpapers tool
           1.1. sol, moon
