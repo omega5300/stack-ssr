@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { MovieSchema, Movie } from '~~/utils/interfaces/movieInterface';
+/* __placeholder__ */
+import type { MovieSchema, Movie } from '~~/utils/interfaces/movieInterface';
 
 useHead({
   title: 'movie info',

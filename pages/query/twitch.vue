@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { TwitchSchema, TwitchUser } from '~~/utils/interfaces/twitchInterface'
+/* __placeholder__ */
+import type { TwitchSchema, TwitchUser } from '~~/utils/interfaces/twitchInterface';
 
 useHead({
   title: 'twitch info',

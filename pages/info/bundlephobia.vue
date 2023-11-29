@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { Bundlephobia } from '~~/utils/interfaces/bundlephobiaInterface'
+/* __placeholder__ */
+import type { Bundlephobia } from '~~/utils/interfaces/bundlephobiaInterface';
 
 useHead({
   title: 'bundlephobia info',

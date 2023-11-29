@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { format } from 'timeago.js'
-import { TwitchUser } from '~~/utils/interfaces/twitchInterface'
+import { type TwitchUser } from '~~/utils/interfaces/twitchInterface'
 
 const { user } = defineProps<{
   user: TwitchUser

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Whois } from '~~/utils/interfaces/whoisInterface';
+import { type Whois } from '~~/utils/interfaces/whoisInterface';
 
 useHead({
   title: 'whois info',

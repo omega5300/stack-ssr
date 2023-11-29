@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TechStack } from '~~/utils/interfaces/stackInterface'
+import { type TechStack } from '~~/utils/interfaces/stackInterface'
 
 useHead({
   title: 'tech-stack',

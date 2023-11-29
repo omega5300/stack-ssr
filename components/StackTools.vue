@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Tools } from '~~/utils/interfaces/linkInterface';
+import { type Tools } from '~~/utils/interfaces/linkInterface';
 
 const { pages } = defineProps<{
   pages: Tools[]

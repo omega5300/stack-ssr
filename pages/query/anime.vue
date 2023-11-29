@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { Anime, AnimePagination } from '~~/utils/interfaces/animeInterface'
+/* __placeholder__ */
+import type { Anime, AnimePagination } from '~~/utils/interfaces/animeInterface';
 
 useHead({
   title: 'anime search',

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { stringify } from 'postcss';
-import { Pokemon } from '~/utils/interfaces/pokemonInterface';
+import { type Pokemon } from '~/utils/interfaces/pokemonInterface';
 
 interface Stats {
   name: string

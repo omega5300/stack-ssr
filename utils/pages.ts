@@ -1,4 +1,4 @@
-import {Link, Tools} from './interfaces/linkInterface'
+import type { Link, Tools } from './interfaces/linkInterface'
 
 const mainPages: Link[] = [
   {
@@ -16,6 +16,10 @@ const mainPages: Link[] = [
   {
     app: 'utility',
     path: '/utility'
+  },
+  {
+    app: 'wallpapers',
+    path: '/wallpapers'
   },
   {
     app: 'about',

@@ -180,7 +180,7 @@ body {
 .btn {
   padding: theme(padding[2.5]) theme(padding.5);
   margin: theme(margin.2) theme(margin.1);
-  @apply font-medium rounded-lg text-sm w-full max-w-full text-center;
+  @apply font-medium rounded-lg text-sm w-9/12 max-w-full text-center;
 }
 
 .btn:disabled {
@@ -388,6 +388,10 @@ body {
 
 .stat {
   @apply flex items-center gap-2.5 max-w-full my-1;
+}
+
+.wallpapers {
+  @apply columns-5 gap-2;
 }
 
 @keyframes blink {

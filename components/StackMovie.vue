@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Movie } from '~~/utils/interfaces/movieInterface';
+import { type Movie } from '~~/utils/interfaces/movieInterface';
 
 const { movieData } = defineProps<{
   movieData: Movie;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Device, DeviceInfo } from '@capacitor/device'
-import { Network, ConnectionStatus } from '@capacitor/network'
+import { Device, type DeviceInfo } from '@capacitor/device'
+import { Network, type ConnectionStatus } from '@capacitor/network'
 
 useHead({
   title: 'hardware infomation',
