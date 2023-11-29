@@ -42,6 +42,5 @@ config.autoAddCss = false
 library.add(...icons)
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component('stack-fa', FontAwesomeIcon)
-  nuxtApp.vueApp.
+  nuxtApp.vueApp.component('stack-fa', FontAwesomeIcon, {})
 })
