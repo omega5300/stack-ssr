@@ -5,6 +5,13 @@ type detailsVersion = {
 
 export const versionsNotes: detailsVersion[] = [
   {
+    version: '2.1.0',
+    details: `
+      added:
+        1. css-validator tool
+    `
+  },
+  {
     version: '2.0.0',
     details: `
       added:
