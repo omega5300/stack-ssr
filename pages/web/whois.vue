@@ -8,7 +8,7 @@ useHead({
     { name: 'keywords', content: 'stack whois, stack-analyze, whois info' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js' }
   ]
 })
 

@@ -20,7 +20,7 @@ import {
 // brand icons
 import { 
   faGithub, faInstagram, faTiktok, 
-  faCodepen, faYoutube, faTwitch 
+  faCodepen, faYoutube, faTwitch, faCss3 
 } from '@fortawesome/free-brands-svg-icons'
 
 // lib icons
@@ -29,6 +29,7 @@ const icons = [
   faSun, faMoon, faThumbsUp, faUsersGear, faHome, faGlobe,
   // brand icons
   faGithub, faInstagram, faTiktok, faCodepen, faYoutube, faTwitch,
+  faCss3,
   // tools icons
   faVideoCamera, faSpider, faTerminal, faCode, faInfo, faGaugeMed, 
   faSearch, faWallet, faLock, faHandSpock, faFileCode, faFilm,

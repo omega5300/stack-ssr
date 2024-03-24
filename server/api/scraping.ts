@@ -1,7 +1,7 @@
 import { load } from 'cheerio'
-import { 
-  HashFunctions, 
-  WebScraping 
+import type {
+  HashFunctions,
+  WebScraping
 } from '~~/utils/interfaces/scrapingInterface'
 
 export default defineEventHandler(async (event) => {

@@ -8,7 +8,7 @@ useHead({
     { name: 'keywords', content: 'stack web scraping, web scraping, stack-analyze' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js' }
   ]
 })
 

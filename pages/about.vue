@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { Navigation } from "swiper/modules"
-
-import { Swiper, SwiperSlide } from "swiper/vue"
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -14,7 +13,7 @@ useHead({
   meta: [
     { name: 'description', content: 'about tool, version & lineup' },
     { name: 'keywords', content: 'stack-analyze, stack-analyze about' }
-  ]
+  ],
 })
 
 const modules = [Navigation]

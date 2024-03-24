@@ -52,6 +52,11 @@ const webPages: Tools[] = [
     path: '/web/scraping',
     icon: ['fas', 'fa-spider']
   },
+  {
+    app: 'css validator',
+    path: '/web/css-validator',
+    icon: ['fab', 'css3']
+  }
 ]
 
 const infoPages: Tools[] = [

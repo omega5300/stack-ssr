@@ -8,7 +8,7 @@ useHead({
     { name: 'keywords', content: 'stack tech-stack, tech-stack, stack-analyze, analyze tecnologies' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js' }
   ]
 })
 

@@ -17,7 +17,7 @@ useHead({
     { name: 'keywords', content: 'stack pagespeed, pagespeed, stack-analyze' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js' }
   ]
 })
 

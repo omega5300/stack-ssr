@@ -25,6 +25,11 @@ export const webTools: Tools[] = [
     versionAdded: '(npm) 1.1.9',
     description: 'this tool only scraping html pages not SPA webs'
   },
+  {
+    name: 'css validator',
+    versionAdded: '(npm) 1.2.9',
+    description: 'css validator using w3c service.'
+  },
 ]
 
 export const infoTools: Tools[] = [
@@ -47,7 +52,7 @@ export const infoTools: Tools[] = [
     name: 'bundlephobia info',
     versionAdded: '(npm) 1.2.3',
     description: 'using the bundlephobia web for search npm package info'
-  },
+  }
 ]
 
 export const queryTools: Tools[] = [

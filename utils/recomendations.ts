@@ -67,12 +67,3 @@ export const twitchRecomendations: SocialMedia[] = [
     link: "https://www.twitch.tv/japon_hr"
   },
 ];
-
-export const webRecomendations: SocialMedia[] = [
-  {
-    name: "Doofy's Projects",
-    logo: ['fas', 'globe'],
-    link: "https://dprojects.org"
-  },
-
-]

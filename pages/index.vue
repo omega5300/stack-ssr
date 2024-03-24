@@ -46,13 +46,6 @@ useHead({
               <strong class="ml-3">{{ twitch.name }}</strong>
             </a>
           </li>
-
-          <li v-for="web of webRecomendations" :key="web.name">
-            <a :href="web.link" target="_blank">
-              <stack-fa :icon="web.logo" />
-              <strong class="ml-3">{{ web.name }}</strong>
-            </a>
-          </li>
         </ul>
       </article>
     </section>
