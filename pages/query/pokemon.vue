@@ -33,8 +33,8 @@ const statLabels: string[] = [
 ]
 
 const starColors: string[] = [
-  'rgb(255 0 0 / 60%)', 'rgb(255 255 0 / 60%)', 'rgb(68 0 255 / 60%)', 
-  'rgb(0 0 255 / 60%)', 'rgb(0 255 0 / 60%)', 'rgb(255 0 255 / 60%)', 
+  'rgb(255 0 0 / 60%)', 'rgb(255 255 0 / 60%)', 'rgb(68 0 255 / 60%)',
+  'rgb(0 0 255 / 60%)', 'rgb(0 255 0 / 60%)', 'rgb(255 0 255 / 60%)',
   'rgb(0 255 255 / 60%)'
 ]
 
@@ -144,7 +144,9 @@ const clearPokemonInfo = () => {
           <poke-type v-for="type of pokemonTypes" :key="type" :type="type" />
         </ul>
 
-        <bar :options="chartOptions" :data="chartData" />
+        <section class="w-3/6 p-2 h-[50vh] mx-auto">
+          <bar :options="chartOptions" :data="chartData" />
+        </section>
       </section>
     </section>
   </nuxt-layout>
