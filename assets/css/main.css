@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: radial-gradient(circle at 18.7% 37.8%, #fafafa 0%, #e1eaee 90%);
+  --background-grand: radial-gradient(circle at 18.7% 37.8%, #fafafa 0%, #e1eaee 90%);
+  --bg-color: #fafafa;
   --theme: #222;
   --glass: rgba(0, 0, 0, 0.25);
   --shadow: rgba(0, 0, 0, 0.62);
@@ -20,7 +21,8 @@
 }
 
 .dark {
-  --background: radial-gradient(circle at 18.7% 37.8%, #000 0%, #222 90%);
+  --background-grand: radial-gradient(circle at 18.7% 37.8%, #000 0%, #222 90%);
+  --bg-color: #000;
   --theme: #fff;
   --glass: rgba(255, 255, 255, 0.25);
   --shadow: rgba(255, 255, 255, 0.62);
@@ -59,7 +61,8 @@ body, .btns, .result {
 body {
   @apply min-h-screen m-0;
   grid-template-rows: auto 1fr auto;
-  background-image: var(--background);
+  background-image: var(--background-grand);
+  background-color: var(--bg-color);
   color: var(--theme);
   /* firefox scrollbar */
   scrollbar-width: thin;
@@ -256,6 +259,26 @@ body {
   font-size: 1.5em;
 }
 
+.deezer {
+  @apply p-2;
+}
+
+.deezer-cover {
+  border-radius: 5%;
+}
+
+.deezer-album {
+  @apply text-2xl font-bold;
+}
+
+.deezer-artist {
+  @apply text-lg;
+}
+
+.deezer-info {
+  @apply flex justify-between m-2;
+}
+
 .input-box {
   border: none;
 }
@@ -392,6 +415,18 @@ body {
 
 .wallpapers {
   @apply columns-5 gap-2;
+}
+
+swiper-container {
+  width: 90%;
+  height: 100%;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 @keyframes blink {

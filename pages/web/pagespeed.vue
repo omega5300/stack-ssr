@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Bar } from 'vue-chartjs';
+import { Bar } from 'vue-chartjs'
 import {
   Chart,
   Title,
@@ -35,11 +35,11 @@ const { startWithHttp, validateWebsite, website } = useHttp()
 const resultScore = (score: number) => {
   switch (true) {
     case score === 0 || score <= 49:
-      return 'rgba(255, 0, 0, 0.6)'
+      return 'rgb(255 0 0 / 60%)'
     case score === 50 || score <= 89:
-      return 'rgba(255, 255, 0, 0.6)'
+      return 'rgb(255 255 0 / 60%)'
     case score >= 90 || score === 100:
-      return 'rgba(0, 255, 0, 0.6)'
+      return 'rgb(0 255 0 / 60%)'
   }
 }
 

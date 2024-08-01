@@ -6,7 +6,7 @@ export const cards: Card[] = [
     img: "/img/logo-mobile.png",
     name: "app logo",
     title: "stack-analyze",
-    details: `version: 2.1.0`,
+    details: `version: 2.2.0`,
     social: [
       {
         socialID: "github",

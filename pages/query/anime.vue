@@ -9,7 +9,7 @@ useHead({
     { name: 'keywords', content: 'stack-analyze, anime search, stack-analyze anime' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js' }
   ]
 })
 

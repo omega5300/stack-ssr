@@ -76,12 +76,17 @@ export const queryTools: Tools[] = [
     versionAdded: '(npm) 1.1.7',
     description: 'using the twitch api helix'
   },
+  {
+    name: 'deezer search',
+    versionAdded: '(npm) 1.3.0 & (stack-delta) 3.0.0',
+    description: 'using the deezer api'
+  },
 ]
 
 export const utilityTools: Tools[] = [
   {
     name: 'hardware infomation',
-    versionAdded: '(npm) 1.1.0 & (stack-delta) 1.1.0',
+    versionAdded: '(npm) 1.1.0 & (stack-delta) 1.0.0',
     description: 'get hardware info and/or browser version'
   },
   {

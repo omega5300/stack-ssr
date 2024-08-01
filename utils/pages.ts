@@ -113,6 +113,11 @@ const queryPages: Tools[] = [
     path: '/query/twitch',
     icon: ['fab', 'twitch'],
   },
+  {
+    app: 'deezer search',
+    path: '/query/deezer',
+    icon: ['fab', 'deezer'],
+  },
 ]
 
 const utilityPages: Tools[] = [

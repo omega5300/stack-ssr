@@ -9,7 +9,7 @@ useHead({
     { name: 'keywords', content: 'stack-analyze, movie info, stack-analyze movie' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js' }
   ]
 })
 
@@ -24,7 +24,7 @@ const movies = ref<Movie[]>([])
 const isEmptyMovies = computed(() => movies.value.length === 0)
 
 // methods
-const searchMovies =async () => {
+const searchMovies = async () => {
   if(!movieTitle.value) {
     alertMsg('this field is required', 'alert-warn')
     return

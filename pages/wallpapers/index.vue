@@ -11,7 +11,7 @@ useHead({
 })
 
 // static
-const wallpaperOpts = ['solMoon', 'dimensions']
+const wallpaperOpts = ['solMoon', 'dimensions', 'seyyahi2']
 
 // states
 const wallpaperSelect = ref('')

@@ -23,4 +23,12 @@ export const wallpapers: Select = {
 		"/dimensions/dimensions-9.jpeg", "/dimensions/dimensions-10.jpeg",
 		"/dimensions/dimensions-11.jpeg", "/dimensions/dimensions-12.jpeg",
 	],
+	seyyahi2: [
+		"/seyyahi2/seyyahi2-1.jpg", "/seyyahi2/seyyahi2-2.jpg",
+		"/seyyahi2/seyyahi2-3.jpg", "/seyyahi2/seyyahi2-4.jpg",
+		"/seyyahi2/seyyahi2-5.jpg", "/seyyahi2/seyyahi2-6.jpg",
+		"/seyyahi2/seyyahi2-7.jpg", "/seyyahi2/seyyahi2-8.jpg",
+		"/seyyahi2/seyyahi2-9.jpg", "/seyyahi2/seyyahi2-10.jpg",
+		"/seyyahi2/seyyahi2-11.jpg", "/seyyahi2/seyyahi2-12.jpg",
+	],
 };

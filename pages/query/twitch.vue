@@ -9,7 +9,7 @@ useHead({
     { name: 'keywords', content: 'stack-analyze, bitly info, stack-analyze bitly info' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js'}
   ]
 })
 

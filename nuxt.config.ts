@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       twitchToken: process.env.TWITCH_TOKEN,
     }
   },
+
   app: {
     rootId: 'root',
     rootTag: 'body',
@@ -20,10 +21,12 @@ export default defineNuxtConfig({
       ]
     },
   },
+
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '~/assets/css/main.css',
   ],
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -32,7 +35,13 @@ export default defineNuxtConfig({
       },
     }
   },
+
   vite: {
+  },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.includes('swiper-')
+    }
   },
   build: {
     transpile: [
@@ -43,4 +52,6 @@ export default defineNuxtConfig({
       '@fortawesome/vue-fontawesome'
     ]
   },
+
+  compatibilityDate: '2024-07-22',
 })

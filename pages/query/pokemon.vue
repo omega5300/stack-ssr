@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import { type Pokemon } from '~/utils/interfaces/pokemonInterface';
-
-interface Stats {
-  name: string
-  color: string
-  value: number
-  maxValue: number
-}
-
-interface Special {
-  [key: string]: string
-}
+import { Bar } from 'vue-chartjs'
+import {
+  Chart,
+  Title,
+  Tooltip,
+  Legend,
+  BarElement,
+  CategoryScale,
+  LinearScale
+} from 'chart.js'
 
 useHead({
   title: 'pokemon info',
@@ -19,12 +18,39 @@ useHead({
     { name: 'keywords', content: 'stack pokemon info, pokemon, stack-analyze' }
   ],
   script: [
-    { src: '/js/alert.js', body: true }
+    { src: '/js/alert.js' }
   ]
 })
 
+Chart.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+
 // static
-const maxStats = [255, 194, 230, 180, 230, 200]
+const maxStats: number[] = [255, 194, 230, 180, 230, 200]
+
+const statLabels: string[] = [
+  'hp', 'attack', 'defense', 'special attack',
+  'special defense', 'speed', 'xp'
+]
+
+const starColors: string[] = [
+  'rgb(255 0 0 / 60%)', 'rgb(255 255 0 / 60%)', 'rgb(68 0 255 / 60%)', 
+  'rgb(0 0 255 / 60%)', 'rgb(0 255 0 / 60%)', 'rgb(255 0 255 / 60%)', 
+  'rgb(0 255 255 / 60%)'
+]
+
+const chartOptions = {
+  responsive: true,
+  indexAxis: 'y',
+  plugins: {
+    title: {
+      display: true,
+      text: 'pokemon stats'
+    }
+  },
+  scales: {
+    x: { min: 0, max: 635 }
+  }
+}
 
 // state
 const pokemon = ref<number | string>('')
@@ -34,10 +60,20 @@ const pokeDefaultSpite = ref('')
 const pokemonID = ref(0)
 const pokemonName = ref('')
 const pokemonTypes = ref<string[]>([])
-const pokemonStats = ref<Stats[]>([])
+const pokemonStats = ref<number[]>([])
 
-// 
+// computers
 const isEmptyPokeInfo = computed(() => !pokemonID.value)
+
+const chartData = computed(() => ({
+  labels: statLabels,
+  datasets: [{
+    label: 'stats',
+    data: [...pokemonStats.value],
+    backgroundColor: starColors,
+    borderWidth: 1
+  }],
+}))
 
 const pokemonSearch = async () => {
   if (!pokemon.value || (pokemon.value as number) <= 0) {
@@ -61,28 +97,11 @@ const pokemonSearch = async () => {
 
     pokemonTypes.value = types.map(({ type }) => type.name)
 
-    stats.forEach(({ base_stat, stat }, i) => {
-      const specialName: Special = {
-        'special-defense': 'S.def',
-        'special-attack': 'S.atk',
-        'attack': 'atk',
-        'defense': 'def',
-      }
-
-      pokemonStats.value.push({
-        name: specialName[stat.name] || stat.name,
-        color: stat.name,
-        value: base_stat,
-        maxValue: maxStats[i]
-      })
+    stats.forEach(({ base_stat }, i) => {
+      pokemonStats.value.push(base_stat)
     })
 
-    pokemonStats.value.push({
-      name: 'xp',
-      color: 'xp',
-      value: base_experience,
-      maxValue: 635
-    })
+    pokemonStats.value.push(base_experience)
   } catch (err) {
     alertMsg((err as Error).message, 'alert-danger')
   }
@@ -98,12 +117,7 @@ const clearPokemonInfo = () => {
   pokemonStats.value = []
 }
 
-onMounted(() => {
-  alertMsg(
-    'warning this tool not using in firefox',
-    'alert-warn'
-  )
-})
+
 </script>
 
 <template>
@@ -130,10 +144,7 @@ onMounted(() => {
           <poke-type v-for="type of pokemonTypes" :key="type" :type="type" />
         </ul>
 
-        <article>
-          <poke-stat v-for="stat of pokemonStats" :key="stat.name" :stat-color="stat.color" :stat-name="stat.name"
-            :stat-value="stat.value" :stat-max-value="stat.maxValue" />
-        </article>
+        <bar :options="chartOptions" :data="chartData" />
       </section>
     </section>
   </nuxt-layout>
