@@ -13,8 +13,7 @@ import {
   faSpider, faTerminal, faCode, faInfo, faHome,
   faGaugeMed, faSearch, faWallet, faLock, faHandSpock, 
   faFileCode, faFilm, faDice, faRefresh, faClipboard,
-  faGlobe,
-  faGamepad
+  faGlobe, faGamepad, faWandMagic
 } from '@fortawesome/free-solid-svg-icons'
 
 // brand icons
@@ -27,7 +26,7 @@ import {
 // lib icons
 const icons = [
   // common icons
-  faSun, faMoon, faThumbsUp, faUsersGear, faHome, faGlobe,
+  faSun, faMoon, faThumbsUp, faUsersGear, faHome, faGlobe, faWandMagic,
   // brand icons
   faGithub, faInstagram, faTiktok, faCodepen, faYoutube, faTwitch,
   faCss3, faDeezer,

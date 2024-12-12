@@ -118,6 +118,11 @@ const queryPages: Tools[] = [
     path: '/query/deezer',
     icon: ['fab', 'deezer'],
   },
+  {
+    app: 'potter search',
+    path: '/query/potter',
+    icon: ['fas', 'wand-magic'],
+  },
 ]
 
 const utilityPages: Tools[] = [
