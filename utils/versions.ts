@@ -5,6 +5,17 @@ type detailsVersion = {
 
 export const versionsNotes: detailsVersion[] = [
   {
+    version: '2.4.0',
+    details: `
+    added: 
+      1. poker game rule
+    changed: 
+      1. now using type for queries in apis.
+    remove: 
+      2. swiper for nuxt (pwa spa still swiper).
+    `
+  },
+  {
     version: '2.3.0',
     details: `
     added: 

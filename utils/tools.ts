@@ -81,6 +81,11 @@ export const queryTools: Tools[] = [
     versionAdded: '(npm) 1.3.0 & (stack-delta) 3.0.0',
     description: 'using the deezer api'
   },
+  {
+    name: 'potter search',
+    versionAdded: '(npm) 1.3.3',
+    description: 'search harry potter characters info'
+  }
 ]
 
 export const utilityTools: Tools[] = [
@@ -94,4 +99,9 @@ export const utilityTools: Tools[] = [
     versionAdded: '(npm) 1.2.0 & (stack-delta) 2.0.0',
     description: 'generate a random password'
   },
+  {
+    name: 'poker game rule',
+    versionAdded: '(npm) 1.3.5',
+    description: 'search a game rule, players & age'
+  }
 ]

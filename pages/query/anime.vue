@@ -8,9 +8,6 @@ useHead({
     { name: 'description', content: 'tool for query anime, ova and others' },
     { name: 'keywords', content: 'stack-analyze, anime search, stack-analyze anime' }
   ],
-  script: [
-    { src: '/js/alert.js' }
-  ]
 })
 
 const anime = ref('')

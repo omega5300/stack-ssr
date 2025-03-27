@@ -141,6 +141,11 @@ const utilityPages: Tools[] = [
     path: '/utility/hardware',
     icon: ['fas', 'terminal'],
   },
+  {
+    app: 'poker game',
+    path: '/utility/poker',
+    icon: ['fas', 'heart'],
+  },
 ]
 
 export {

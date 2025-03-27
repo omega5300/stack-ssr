@@ -4,14 +4,17 @@ import type {
   WebScraping
 } from '~~/utils/interfaces/scrapingInterface'
 
-export default defineEventHandler(async (event) => {
-  const query = getQuery(event)
+type Scraping= {
+  website: string
+  opt: string
+}
 
-  const { website, opt } = query
+export default defineEventHandler<{query: Scraping}>(async (event) => {
+  const { website, opt } = getQuery(event)
   try {
-    const res = await fetch(website as string)
-
-    const data = await res.text()
+    const data = await (
+      await fetch(website)
+    ).text()
 
     const $ = load(data)
 
@@ -89,7 +92,7 @@ export default defineEventHandler(async (event) => {
       }
     }
 
-    return scraping[opt as string]()
+    return scraping[opt]()
   } catch (err) {
     return (err as Error).message
   }

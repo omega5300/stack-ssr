@@ -1,13 +1,17 @@
 import WhoisLight from 'whois-light'
 
-export default defineEventHandler(async (event) => {
-  const query = getQuery(event)
+type WhoisQuery = {
+  website: string
+}
 
-  const { website } = query
+export default defineEventHandler<{
+  query: WhoisQuery
+}>(async (event) => {
+  const { website } = getQuery(event)
 
   if (website != '') {
     try {
-      const data = await WhoisLight.lookup(website as string)
+      const data = await WhoisLight.lookup(website)
 
       return {
         website,

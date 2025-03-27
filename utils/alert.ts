@@ -1,10 +1,6 @@
-/**
- * @typedef {'alert-warn' | 'alert-danger'} alertClass
- * @description alert function
- * @param {string} msg 
- * @param {alertClass} className 
- */
-const alertMsg = (msg, className) => {
+type AlertClass = 'alert-warn' | 'alert-danger'
+
+export const alertMsg = (msg: string, className: AlertClass) => {
   const toast = document.createElement('div')
   toast.textContent = msg
   toast.classList.add('alert', className, 'show')

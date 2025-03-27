@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background-grand: radial-gradient(circle at 18.7% 37.8%, #fafafa 0%, #e1eaee 90%);
@@ -18,6 +16,8 @@
   --dark: #222428;
   --btn-primary-color-txt: #fff;
   --btn-secondary-color-txt: #222;
+  --light-icon-display: block;
+  --dark-icon-display: none;
 }
 
 .dark {
@@ -36,22 +36,8 @@
   --dark: #f4f5f8;
   --btn-primary-color-txt: #222;
   --btn-secondary-color-txt: #fff;
-}
-
-/* all browser based on webkit */
-.scroll::-webkit-scrollbar {
-  @apply w-[10px];
-}
-
-.scroll::-webkit-scrollbar-track {
-  background: none;
-  @apply rounded-[5px];
-}
-
-.scroll::-webkit-scrollbar-thumb {
-  background-color: var(--theme);
-  border: 2px solid var(--theme);
-  @apply rounded-[10px];
+  --light-icon-display: none;
+  --dark-icon-display: block;
 }
 
 body, .btns, .result {
@@ -67,6 +53,13 @@ body {
   /* firefox scrollbar */
   scrollbar-width: thin;
   scrollbar-color: var(--theme);
+}
+
+.light-icon {
+  display: var(--light-icon-display);
+}
+.dark-icon {
+  display: var(--dark-icon-display);
 }
 
 .page-title {
@@ -297,7 +290,7 @@ body {
 }
 
 .info-list {
-  @apply py-1 flex justify-center gap-3;
+  @apply py-1 flex justify-center gap-2;
 }
 
 .list, .crypto-list {
@@ -417,16 +410,13 @@ body {
   @apply columns-5 gap-2;
 }
 
-swiper-container {
-  width: 90%;
-  height: 100%;
+.about-cards {
+  @apply grid gap-2 p-2;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.about-card {
+  height: fit-content;
 }
 
 @keyframes blink {

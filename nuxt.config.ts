@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -17,7 +19,7 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       noscript: [
-        { children: 'JavaScript is required' }
+        { textContent: 'JavaScript is required' }
       ]
     },
   },
@@ -27,22 +29,14 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
   ],
 
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {
-        overrideBrowserslist: ['> 0.2% and not dead'],
-      },
-    }
+  vite: {
+    plugins: [
+      tailwindcss()
+    ]
   },
 
-  vite: {
-  },
-  vue: {
-    compilerOptions: {
-      isCustomElement: (tag) => tag.includes('swiper-')
-    }
-  },
+  vue: {},
+
   build: {
     transpile: [
       '@fortawesome/fontawesome-svg-core',

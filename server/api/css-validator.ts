@@ -1,12 +1,16 @@
 import cssValidator from 'w3c-css-validator'
 
-export default defineEventHandler(async (event) => {
-  const query = getQuery(event)
+type CSSValidate = {
+  website: string
+}
 
-  const { website } = query
+export default defineEventHandler<{
+  query: CSSValidate
+}>(async (event) => {
+  const { website } = getQuery(event)
 
   try {
-    const data = await cssValidator.validateURL(website as string)
+    const data = await cssValidator.validateURL(website)
 
     return data
   } catch(err) {
