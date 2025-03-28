@@ -18,11 +18,13 @@ export default defineEventHandler<{
 
     const $ = load(page)
 
-    const [age, players] = $(".border-brand-blue-pale div:not(.text-brand-blue)").map(
+    const [age, players] = $(
+      ".border-brand-blue-pale div:not(.text-brand-blue)"
+    ).map(
       (i, el) => $(el).text()
     ).get().slice(1);
 
-    const howPlay = $("h3.text-2xl").map(
+    const howPlay = $("h3.text-2xl+p.mb-5").map(
       (i, el) => $(el).text()
     ).get().slice(0, 5);
 
