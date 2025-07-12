@@ -5,9 +5,6 @@ useHead({
     { name: 'description', content: 'password generator tool designed for some user for search safe password' },
     { name: 'keywords', content: 'stack-analyze, password generator, stack-analyze password generator' }
   ],
-  script: [
-    { src: '/js/alert.js', body: true }
-  ]
 })
 
 // state

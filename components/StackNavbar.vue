@@ -1,14 +1,7 @@
 <script setup lang="ts">
 import { mainPages } from '~~/utils/pages';
 
-const menu = ref<HTMLElement | null>(null)
-const isDarkTheme = ref('')
-
-const toggleDark = () => {
-  document.documentElement.classList.toggle('dark')
-
-  localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-}
+const menu = useTemplateRef('menu')
 
 const toggleMenu = () => {
   menu.value?.classList.toggle('menu-active')
@@ -30,10 +23,6 @@ const closeMenu = () => {
       >
       stack-analyze
     </nuxt-link>
-    <button class="btn-change" @click="toggleDark">
-      <stack-fa icon="fa-solid fa-moon" class="light-icon" />
-      <stack-fa icon="fa-solid fa-sun" class="dark-icon" />
-    </button>
     <div class="menu-btn" @click="toggleMenu">
       <span class="bars"></span>
     </div>

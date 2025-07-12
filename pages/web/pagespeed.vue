@@ -16,9 +16,6 @@ useHead({
     { name: 'description', content: 'pagespeed tool using google api' },
     { name: 'keywords', content: 'stack pagespeed, pagespeed, stack-analyze' }
   ],
-  script: [
-    { src: '/js/alert.js' }
-  ]
 })
 
 Chart.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)

@@ -8,9 +8,6 @@ useHead({
     { name: 'description', content: 'tool for check os and browser version' },
     { name: 'keywords', content: 'stack-analyze, hardware infomation, stack-analyze hardware info' }
   ],
-  script: [
-    { src: '/js/alert.js', body: true }
-  ]
 })
 
 const hardwareElement = ref<HTMLElement | null>(null)

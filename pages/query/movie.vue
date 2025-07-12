@@ -8,9 +8,6 @@ useHead({
     { name: 'description', content: 'tool for query movie' },
     { name: 'keywords', content: 'stack-analyze, movie info, stack-analyze movie' }
   ],
-  script: [
-    { src: '/js/alert.js' }
-  ]
 })
 
 // config

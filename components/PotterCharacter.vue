@@ -16,7 +16,7 @@ const { character } = defineProps<{
           :alt="character.nickname" 
         />
       </figure>
-      <p class="list-item__header">
+      <article class="list-item__header">
         <strong class="list-item__title">
           {{ character.fullName }} - {{ character.nickname }}
         </strong>
@@ -24,7 +24,7 @@ const { character } = defineProps<{
           interpreted by: {{ character.interpretedBy }} <br>
           hogwarts house: {{ character.hogwartsHouse }}
         </p>
-      </p>
+      </article>
       <p class="list-item__details">
         {{ character.birthdate }}
       </p>

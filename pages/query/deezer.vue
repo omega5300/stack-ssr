@@ -7,9 +7,6 @@ useHead({
     { name: 'description', content: 'webscraping tool only in static webs not allow webs written with js' },
     { name: 'keywords', content: 'stack deezer search, deezer search, stack-analyze' }
   ],
-  script: [
-    { src: '/js/alert.js' }
-  ]
 })
 
 // states

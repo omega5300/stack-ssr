@@ -31,4 +31,14 @@ export const wallpapers: Select = {
 		"/seyyahi2/seyyahi2-9.jpg", "/seyyahi2/seyyahi2-10.jpg",
 		"/seyyahi2/seyyahi2-11.jpg", "/seyyahi2/seyyahi2-12.jpg",
 	],
+	ancientMistery: [
+		"/ancient-mistery/ancient-mistery1.jpeg", "/ancient-mistery/ancient-mistery2.jpeg", 
+		"/ancient-mistery/ancient-mistery3.jpeg", "/ancient-mistery/ancient-mistery4.jpeg", 
+		"/ancient-mistery/ancient-mistery5.jpeg", "/ancient-mistery/ancient-mistery6.jpeg",
+	],
+	tsukyNoEmily: [
+		"/tsuky-no-emily/tsuky-no-emily1.jpeg", "/tsuky-no-emily/tsuky-no-emily2.jpeg", 
+		"/tsuky-no-emily/tsuky-no-emily3.jpeg", "/tsuky-no-emily/tsuky-no-emily4.jpeg", 
+		"/tsuky-no-emily/tsuky-no-emily5.jpeg", "/tsuky-no-emily/tsuky-no-emily6.jpeg",
+	]
 };

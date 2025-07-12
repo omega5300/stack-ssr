@@ -8,9 +8,6 @@ useHead({
     { name: 'description', content: 'search & get github profile info' },
     { name: 'keywords', content: 'stack web github, github info, stack-analyze' }
   ],
-  script: [
-    { src: '/js/alert.js', body: true }
-  ]
 })
 
 // states

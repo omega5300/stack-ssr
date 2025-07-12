@@ -7,9 +7,6 @@ useHead({
     { name: 'description', content: 'tools for query domain info' },
     { name: 'keywords', content: 'stack whois, stack-analyze, whois info' }
   ],
-  script: [
-    { src: '/js/alert.js' }
-  ]
 })
 
 const { startWithHttp, validateWebsite, website } = useHttp()

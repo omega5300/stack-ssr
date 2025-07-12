@@ -5,6 +5,20 @@ type detailsVersion = {
 
 export const versionsNotes: detailsVersion[] = [
   {
+    version: '2.5.0',
+    details: `
+    added: 
+      1. new wallpaers (npm 1.3.6 5th anniversary)
+        1.1. ancient mistery.
+        1.2. tsuky no emily.
+      2. quotes tool (npm 1.3.7).
+    changed:
+      1. replace theme switcher & local storage by light-dark css.
+    fixed:
+      1. web scraping tool using text wrap
+    `
+  },
+  {
     version: '2.4.0',
     details: `
     added: 

@@ -9,7 +9,7 @@ import { faThumbsUp } from '@fortawesome/free-regular-svg-icons'
 
 // solid icons
 import { 
-  faSun, faMoon, faVideoCamera, faUsersGear,
+  faVideoCamera, faUsersGear,
   faSpider, faTerminal, faCode, faInfo, faHome,
   faGaugeMed, faSearch, faWallet, faLock, faHandSpock, 
   faFileCode, faFilm, faDice, faRefresh, faClipboard,
@@ -27,7 +27,7 @@ import {
 // lib icons
 const icons = [
   // common icons
-  faSun, faMoon, faThumbsUp, faUsersGear, faHome, faGlobe, faWandMagic,
+  faThumbsUp, faUsersGear, faHome, faGlobe, faWandMagic,
   // brand icons
   faGithub, faInstagram, faTiktok, faCodepen, faYoutube, faTwitch,
   faCss3, faDeezer,

@@ -1,43 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background-grand: radial-gradient(circle at 18.7% 37.8%, #fafafa 0%, #e1eaee 90%);
-  --bg-color: #fafafa;
-  --theme: #222;
-  --glass: rgba(0, 0, 0, 0.25);
-  --shadow: rgba(0, 0, 0, 0.62);
-  --primary: #3880ff;
-  --secondary: #5620ff;
-  --success: #2dd36f;
-  --warning: #ffc409;
-  --danger: #eb445a;
-  --medium: #92949c;
-  --light: #f4f5f8;
-  --dark: #222428;
-  --btn-primary-color-txt: #fff;
-  --btn-secondary-color-txt: #222;
-  --light-icon-display: block;
-  --dark-icon-display: none;
-}
-
-.dark {
-  --background-grand: radial-gradient(circle at 18.7% 37.8%, #000 0%, #222 90%);
-  --bg-color: #000;
-  --theme: #fff;
-  --glass: rgba(255, 255, 255, 0.25);
-  --shadow: rgba(255, 255, 255, 0.62);
-  --primary: #428cff;
-  --secondary: #50c8ff;
-  --success: #2fdf75;
-  --warning: #ffd534;
-  --danger: #ff4961;
-  --medium: #989aa2;
-  --light: #222428;
-  --dark: #f4f5f8;
-  --btn-primary-color-txt: #222;
-  --btn-secondary-color-txt: #fff;
-  --light-icon-display: none;
-  --dark-icon-display: block;
+  color-scheme: light dark;
+  --bg-color: light-dark(#fafafa, #000);
+  --bg-color-secondary: light-dark(#e1eaee, #222);
+  --theme: light-dark(#222, #fff);
+  --glass: light-dark(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25));
+  --shadow: light-dark(rgba(0, 0, 0, 0.62), rgba(255, 255, 255, 0.62));
+  --primary: light-dark(#3880ff, #428cff);
+  --secondary: light-dark(#5620ff, #50c8ff);
+  --success: light-dark(#2dd36f, #2fdf75);
+  --warning: light-dark(#ffc409, #ffd534);
+  --danger: light-dark(#eb445a, #ff4961);
+  --medium: light-dark(#92949c, #989aa2);
+  --light: light-dark(#f4f5f8, #222428);
+  --dark: light-dark(#222428, #f4f5f8);
+  --btn-primary-color-txt: light-dark(#fff, #222);
+  --btn-secondary-color-txt: light-dark(#222, #fff);
 }
 
 body, .btns, .result {
@@ -47,7 +26,7 @@ body, .btns, .result {
 body {
   @apply min-h-screen m-0;
   grid-template-rows: auto 1fr auto;
-  background-image: var(--background-grand);
+  background-image: radial-gradient(circle at 18.7% 37.8%, var(--bg-color) 0%, var(--bg-color-secondary) 90%);
   background-color: var(--bg-color);
   color: var(--theme);
   /* firefox scrollbar */
@@ -153,7 +132,7 @@ body {
 }
 
 .bars {
-  @apply top-[10px];
+  @apply top-[10px] cursor-pointer;
 }
 
 .bars::after {
@@ -375,6 +354,7 @@ body {
   @apply max-w-full w-[96vw] h-[50vh] overflow-auto p-2;
   background-color: rgba(0, 0, 0, 0.95);
   color: #fff;
+  text-wrap: wrap;
 }
 
 .shell::after {

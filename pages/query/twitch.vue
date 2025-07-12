@@ -8,9 +8,6 @@ useHead({
     { name: 'description', content: 'tool for query twitch user info' },
     { name: 'keywords', content: 'stack-analyze, bitly info, stack-analyze bitly info' }
   ],
-  script: [
-    { src: '/js/alert.js'}
-  ]
 })
 
 const config = useRuntimeConfig()
@@ -47,11 +44,12 @@ const twitchInfo = async () => {
   })
   
   try {
-    const twitchData: TwitchSchema = await $fetch(`https://api.twitch.tv/helix/users?${params.toString()}`, {
+    const twitchData: TwitchSchema = await $fetch('https://api.twitch.tv/helix/users', {
       headers: {
         Authorization: `Bearer ${config.public.twitchToken}`,
         "Client-Id": config.public.twitchClient
-      }
+      },
+      params
     })
     
     twitchUsers.value = twitchData.data

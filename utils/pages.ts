@@ -22,6 +22,10 @@ const mainPages: Link[] = [
     path: '/wallpapers'
   },
   {
+    app: 'quotes',
+    path: '/quotes'
+  },
+  {
     app: 'about',
     path: '/about'
   }

@@ -8,9 +8,6 @@ useHead({
     { name: 'description', content: 'tool for reveal bitly link' },
     { name: 'keywords', content: 'stack-analyze, bitly info, stack-analyze bitly info' }
   ],
-  script: [
-    { src: '/js/alert.js', body: true }
-  ]
 })
 
 // config var

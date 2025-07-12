@@ -8,9 +8,6 @@ useHead({
     { name: 'description', content: 'bundlephobia info for npm packges' },
     { name: 'keywords', content: 'stack bundlephobia, stack-analyze, bundlephobia info' }
   ],
-  script: [
-    { src: '/js/alert.js', body: true }
-  ]
 })
 
 const pkgName = ref('')

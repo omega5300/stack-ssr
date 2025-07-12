@@ -7,9 +7,6 @@ useHead({
     { name: 'description', content: 'tech-stack tools analyze' },
     { name: 'keywords', content: 'stack tech-stack, tech-stack, stack-analyze, analyze tecnologies' }
   ],
-  script: [
-    { src: '/js/alert.js' }
-  ]
 })
 
 const { website, validateWebsite, startWithHttp } = useHttp()
