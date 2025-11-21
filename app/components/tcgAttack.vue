@@ -4,8 +4,8 @@ const { cost, name } = defineProps<{
   name: string
 }>()
 
-const tcgEnegyIcon = () => {
-  switch (name) {
+const tcgEnegyIcon = (energyType: string) => {
+  switch (energyType) {
     case 'Grass': return '/img/tcg-icons/grass.svg';
     case 'Fire': return '/img/tcg-icons/fire.svg';
     case 'Water': return '/img/tcg-icons/water.svg';
@@ -20,14 +20,16 @@ const tcgEnegyIcon = () => {
 </script>
 
 <template>
-  <figure class="tcg-content-attack">
+  <figure class="tcg-content-attack my-1">
     <img v-if="!!cost"
       v-for="energyType in cost" 
-      class="tcg-icon" :src="tcgEnegyIcon()" 
+      class="tcg-icon" :src="tcgEnegyIcon(energyType)" 
       alt="icon"
     />
 
     <stack-fa v-else :icon="['fas', 'fa-circle']" />
+
+    <figcaption>{{ name }}</figcaption>
 
   </figure>
 </template>

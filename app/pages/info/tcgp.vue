@@ -64,13 +64,7 @@ const {
           <li v-show="tcgCardInfo.attacks">
             <ul>
               <li class="tcg-content-info" v-for="attack in tcgCardInfo.attacks">
-                <!-- <figure class="tcg-content-attack" v-if="!!attack.cost">
-                  cost: {{ attack.cost.length }}
-                  <figcaption>{{ attack.name }}</figcaption>
-                </figure> -->
-                <tcg-attack 
-                  :cost="attack.cost" :name="attack.name" 
-                />
+                <tcg-attack :cost="attack.cost" :name="attack.name" />
 
                 <em>{{ attack.damage || 'special' }}</em>
 
