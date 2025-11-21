@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { quotes } from '~/composables/quotesFunctions'
-
 // metadata
 useHead({
   title: 'stack quotes',
@@ -16,7 +14,7 @@ const placeholder = 'enter a quote for seach or leave blank in some quotes optio
 const { 
   isEmptyValues, quoteSearch, quotesContent, quotesFunctions, 
   quotesSelect, 
-} = quotes()
+} = useQuotes()
 
 // dynamic
 const quotesOpts = Object.keys(quotesFunctions).slice(0, -1)

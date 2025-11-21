@@ -1,7 +1,4 @@
 <script setup lang="ts">
-/* __placeholder__ */
-import type { MovieSchema, Movie } from '#shared/interfaces/movieInterface';
-
 useHead({
   title: 'movie info',
   meta: [

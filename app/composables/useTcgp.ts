@@ -1,5 +1,3 @@
-import type {TcgpCard} from '#shared/interfaces/tcgpInterface'
-
 export const useTcgp = () => {
   // static
   const tcgSetsExpansions = Object.keys(TCGP_SETS)

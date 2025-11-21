@@ -1,7 +1,4 @@
 <script setup lang="ts">
-/* __placeholder__ */
-import type { TwitchSchema, TwitchUser } from '#shared/interfaces/twitchInterface';
-
 useHead({
   title: 'twitch info',
   meta: [

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { Deezer, DeezerAlbum } from '#shared/interfaces/deezerInteface';
-
 useHead({
   title: 'deezer search',
   meta: [

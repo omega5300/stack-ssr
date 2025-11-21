@@ -1,11 +1,9 @@
-import type { Quote } from '#shared/interfaces/quotesInterface'
-
 // types
 interface QuotesFunctions {
   [key: string]: () => Promise<void> | void
 }
 
-export const quotes = () => {
+export const useQuotes = () => {
 
   // states
   const quotesSelect = ref('')

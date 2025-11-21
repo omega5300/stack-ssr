@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { type TechStack } from '#shared/interfaces/stackInterface'
-
 useHead({
   title: 'tech-stack',
   meta: [

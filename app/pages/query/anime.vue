@@ -1,7 +1,4 @@
 <script setup lang="ts">
-/* __placeholder__ */
-import type { Anime, AnimePagination } from '#shared/interfaces/animeInterface';
-
 useHead({
   title: 'anime search',
   meta: [

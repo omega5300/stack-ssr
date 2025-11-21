@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { format } from 'timeago.js'
-import { type Bitly } from '#shared/interfaces/bitlyInterface'
 
 useHead({
   title: 'bitly info',

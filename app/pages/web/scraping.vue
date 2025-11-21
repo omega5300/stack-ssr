@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { type WebScraping } from '#shared/interfaces/scrapingInterface';
-
 useHead({
   title: 'web scraping',
   meta: [

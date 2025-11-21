@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { type Pokemon } from '#shared/interfaces/pokemonInterface';
 import { Bar } from 'vue-chartjs'
 import {
   Chart,

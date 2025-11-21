@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { PotterCharacter } from '#shared/interfaces/potterInterdface';
-
 useHead({
   title: 'potter search',
   meta: [

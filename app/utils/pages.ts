@@ -1,5 +1,3 @@
-import type { Link, Tools } from '../../shared/interfaces/linkInterface'
-
 const mainPages: Link[] = [
   {
     app: 'web',

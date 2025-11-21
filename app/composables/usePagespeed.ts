@@ -1,5 +1,3 @@
-import type { Pagespeed } from "#shared/interfaces/pagespeedInterface";
-
 type StrategyOpt = "mobile" | "desktop";
 
 export const usePagespeed = async (url: string, strategy: StrategyOpt) => {

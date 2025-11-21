@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { type Whois } from '#shared/interfaces/whoisInterface';
-
 useHead({
   title: 'whois info',
   meta: [

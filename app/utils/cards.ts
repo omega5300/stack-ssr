@@ -1,5 +1,3 @@
-import type { Card } from "../../shared/interfaces/linksInterface";
-
 export const cards: Card[] = [
   {
     id: "logo",
