@@ -7,7 +7,7 @@ interface Tools extends Link {
   icon: string[];
 }
 
-export { 
+export type { 
   Link,
   Tools
 }
