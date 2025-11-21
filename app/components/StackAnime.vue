@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { type Anime } from '#shared/interfaces/animeInterface'
-
 const { animeData } = defineProps<{
   animeData: Anime
 }>()

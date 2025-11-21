@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { DeezerAlbum } from '#shared/interfaces/deezerInteface'
-
 const { album } = defineProps<{
   album: DeezerAlbum
 }>()

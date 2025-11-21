@@ -4,8 +4,8 @@ const { cost, name } = defineProps<{
   name: string
 }>()
 
-const tcgEnegyIcon = (energyType: string) => {
-  switch (energyType) {
+const tcgEnegyIcon = () => {
+  switch (name) {
     case 'Grass': return '/img/tcg-icons/grass.svg';
     case 'Fire': return '/img/tcg-icons/fire.svg';
     case 'Water': return '/img/tcg-icons/water.svg';
@@ -17,28 +17,13 @@ const tcgEnegyIcon = (energyType: string) => {
     default: return '/img/tcg-icons/colorless.svg';
   }
 }
-
-const tcgEnegyColor = (energyType: string) => {
-  switch (energyType) {
-    case 'Grass': return 'tcg-icon-grass';
-    case 'Fire': return 'tcg-icon-fire';
-    case 'Water': return 'tcg-icon-water';
-    case 'Lightning': return 'tcg-icon-lighting';
-    case 'Psychic': return 'tcg-icon-psychic';
-    case 'Fighting': return 'tcg-icon-figthing';
-    case 'Darkness': return 'tcg-icon-darkness';
-    case 'Metal': return 'tcg-icon-metal';
-    default: return 'tcg-icon-colorless';
-  }
-}
 </script>
 
 <template>
   <figure class="tcg-content-attack">
     <img v-if="!!cost"
       v-for="energyType in cost" 
-      :class="['tcg-icon', tcgEnegyColor(energyType)]" 
-      :src="tcgEnegyIcon(energyType)" 
+      class="tcg-icon" :src="tcgEnegyIcon()" 
       alt="icon"
     />
 

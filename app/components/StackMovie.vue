@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { type Movie } from '#shared/interfaces/movieInterface';
-
 const { movieData } = defineProps<{
   movieData: Movie;
 }>()
