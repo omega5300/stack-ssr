@@ -5,6 +5,16 @@ type detailsVersion = {
 
 export const versionsNotes: detailsVersion[] = [
   {
+    version: '2.6.0',
+    details: `
+    added:
+      1. tcg pocket card info (npm 1.3.9)
+      2. taylor swift quotes (neo-jquery easter egg)
+    changed:
+      1. migrate nuxt 3 dirs to nuxt 4 dir.
+    `
+  },
+  {
     version: '2.5.0',
     details: `
     added: 

@@ -1,4 +1,4 @@
-import type { Pagespeed } from "~~/utils/interfaces/pagespeedInterface";
+import type { Pagespeed } from "#shared/interfaces/pagespeedInterface";
 
 type StrategyOpt = "mobile" | "desktop";
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /* __placeholder__ */
-import type { TwitchSchema, TwitchUser } from '~~/utils/interfaces/twitchInterface';
+import type { TwitchSchema, TwitchUser } from '#shared/interfaces/twitchInterface';
 
 useHead({
   title: 'twitch info',
@@ -44,7 +44,7 @@ const twitchInfo = async () => {
   })
   
   try {
-    const twitchData: TwitchSchema = await $fetch('https://api.twitch.tv/helix/users', {
+    const twitchData = await $fetch<TwitchSchema>('https://api.twitch.tv/helix/users', {
       headers: {
         Authorization: `Bearer ${config.public.twitchToken}`,
         "Client-Id": config.public.twitchClient

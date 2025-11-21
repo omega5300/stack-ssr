@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type CryptoSchema } from '~~/utils/interfaces/cryptoInterface';
+import { type CryptoSchema } from '#shared/interfaces/cryptoInterface';
 
 useHead({
   title: 'crypto market',

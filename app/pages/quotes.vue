@@ -11,13 +11,15 @@ useHead({
 })
 
 // static
-const quotesOpts = ['anime']
-const placeholder = 'enter a quote for seach or leave blank if your search is anime'
+const placeholder = 'enter a quote for seach or leave blank in some quotes options.'
 
 const { 
   isEmptyValues, quoteSearch, quotesContent, quotesFunctions, 
   quotesSelect, 
 } = quotes()
+
+// dynamic
+const quotesOpts = Object.keys(quotesFunctions).slice(0, -1)
 </script>
 
 <template>

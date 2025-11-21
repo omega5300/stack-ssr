@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { wallpapers } from '~~/utils/wallpapers'
 
 // metadata
 useHead({

@@ -1,4 +1,4 @@
-import type { Card } from "./interfaces/linksInterface";
+import type { Card } from "../../shared/interfaces/linksInterface";
 
 export const cards: Card[] = [
   {

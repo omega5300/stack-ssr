@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PokerRule } from '~/utils/interfaces/pokerInterface'
+import type { PokerRule } from '#shared/interfaces/pokerInterface'
 
 useHead({
   title: 'poker game rule',

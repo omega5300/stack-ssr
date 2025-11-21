@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PotterCharacter } from '~/utils/interfaces/potterInterdface';
+import type { PotterCharacter } from '#shared/interfaces/potterInterdface';
 
 useHead({
   title: 'potter search',
@@ -20,7 +20,7 @@ const getCharacters = async () => {
   if(!query.value) return alertMsg('this field is required', 'alert-warn')
 
   try {
-    const potterSchema: PotterCharacter[] = await $fetch('https://potterapi-fedeperin.vercel.app/en/characters', {
+    const potterSchema = await $fetch<PotterCharacter[]>('https://potterapi-fedeperin.vercel.app/en/characters', {
       params: { search: query.value }
     })
 

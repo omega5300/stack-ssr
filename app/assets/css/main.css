@@ -189,7 +189,7 @@ body {
 }
 
 .card {
-  @apply max-h-[40rem] p-3;
+  @apply max-h-160 p-3;
 }
 
 .card__info {
@@ -464,10 +464,15 @@ body {
     @apply underline invert;
   }
 
+  .btn:hover, .select-field {
+    @apply cursor-pointer;
+  }
+
   .btn:hover:disabled {
     /* all: unset; */
     background: none;
     color: #808080;
+    cursor: auto;
   }
 
   .btn-primary:hover {

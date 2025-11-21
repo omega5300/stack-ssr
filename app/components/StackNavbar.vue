@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { mainPages } from '~~/utils/pages';
 
 const menu = useTemplateRef('menu')
 

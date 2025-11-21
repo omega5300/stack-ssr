@@ -1,4 +1,4 @@
-import type { Link, Tools } from './interfaces/linkInterface'
+import type { Link, Tools } from '../../shared/interfaces/linkInterface'
 
 const mainPages: Link[] = [
   {
@@ -73,6 +73,11 @@ const infoPages: Tools[] = [
     app: 'github info',
     path: '/info/github',
     icon: ['fab', 'github'],
+  },
+  {
+    app: 'tcg pocket card info',
+    path: '/info/tcgp',
+    icon: ['fas', 'fa-dice']
   },
   {
     app: 'bitly info',

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /* __placeholder__ */
-import type { CryptoSchema } from '~~/utils/interfaces/cryptoInterface';
+import type { CryptoSchema } from '#shared/interfaces/cryptoInterface';
 
 const { coin } = defineProps<{
   coin: CryptoSchema

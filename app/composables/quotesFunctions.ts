@@ -1,4 +1,4 @@
-import type { AnimeQuote } from '~/utils/interfaces/quotesInterface'
+import type { Quote } from '#shared/interfaces/quotesInterface'
 
 // types
 interface QuotesFunctions {
@@ -10,7 +10,7 @@ export const quotes = () => {
   // states
   const quotesSelect = ref('')
   const quoteSearch = ref('')
-  const quotesContent = ref({})
+  const quotesContent = ref<Quote>({})
 
   const isEmptyValues = computed(
     () => Object.values(quotesContent.value).length === 0
@@ -20,9 +20,21 @@ export const quotes = () => {
   const quotesFunctions: QuotesFunctions = {
     anime: async () => {
       try {
-        const { data } = await $fetch<AnimeQuote>('https://api.animechan.io/v1/quotes/random', {
-          params: { anime: quoteSearch.value }
+        const data = await $fetch<Quote>('https://api.animechan.io/v1/quotes/random', {
+          query: { anime: quoteSearch.value }
         })
+
+        quotesContent.value = data
+      } catch (err) {
+        alertMsg((err as Error).message, 'alert-danger')
+      }
+
+      quotesSelect.value = ''
+      quoteSearch.value = ''
+    },
+    swift: async () => {
+      try {
+        const data = await $fetch<Quote>('https://taylorswiftapi.onrender.com/get')
 
         quotesContent.value = data
       } catch (err) {

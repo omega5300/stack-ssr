@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Pokemon } from '~/utils/interfaces/pokemonInterface';
+import { type Pokemon } from '#shared/interfaces/pokemonInterface';
 import { Bar } from 'vue-chartjs'
 import {
   Chart,
@@ -17,6 +17,9 @@ useHead({
     { name: 'description', content: 'pagespeed tool using google api' },
     { name: 'keywords', content: 'stack pokemon info, pokemon, stack-analyze' }
   ],
+  link: [
+    { rel: 'stylesheet', href: '/css/pokemon.css' }
+  ]
 })
 
 Chart.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
@@ -106,43 +109,44 @@ const inputType = typeof pokemon.value === 'string' ? 'text' : 'number';
 </script>
 
 <template><nuxt-layout name="query">
-  <section>
-    <fieldset class="input-box">
-      <input class="input-field" :type="inputType" placeholder="search pokemon" v-model.number="pokemon" min="1">
-    </fieldset>
+    <section>
+      <fieldset class="input-box">
+        <input class="input-field" :type="inputType" placeholder="search pokemon" v-model.number="pokemon" min="1">
+      </fieldset>
 
-    <section class="btns">
-      <button class="btn btn-success" @click="pokemonSearch">start</button>
-      <button class="btn btn-danger" @click="clearPokemonInfo" :disabled="isEmptyPokeInfo">reset</button>
-    </section>
+      <section class="btns">
+        <button class="btn btn-success" @click="pokemonSearch">start</button>
+        <button class="btn btn-danger" @click="clearPokemonInfo" :disabled="isEmptyPokeInfo">reset</button>
+      </section>
 
-    <section class="glass card card__info">
-      <figure class="card-header">
-        <img class="card-image" :src="pokeDefaultSpite || '/img/No-image-found.jpg'" alt="pokemon default style">
-        <figcaption class="card-title">
-          # {{ pokemonID }} - {{ pokemonName || 'no pokemon' }}
-        </figcaption>
-      </figure>
+      <section class="glass card card__info">
+        <figure class="card-header">
+          <img class="card-image" :src="pokeDefaultSpite || '/img/No-image-found.jpg'" alt="pokemon default style">
+          <figcaption class="card-title">
+            # {{ pokemonID }} - {{ pokemonName || 'no pokemon' }}
+          </figcaption>
+        </figure>
 
-      <ul class="flex justify-center gap-2">
-        <poke-type v-for="type of pokemonTypes" :key="type" :type="type" />
-      </ul>
+        <ul class="flex justify-center gap-2">
+          <poke-type v-for="type of pokemonTypes" :key="type" :type="type" />
+        </ul>
 
-      <section class="w-3/6 p-2 h-[50vh] mx-auto">
-        <bar :options="{
-          responsive: true,
-          indexAxis: 'y',
-          plugins: {
-            title: {
-              display: true,
-              text: 'pokemon stats'
+        <section class="w-max p-2 h-[50vh] mx-auto relative">
+          <bar :options="{
+            responsive: true,
+            indexAxis: 'y',
+            plugins: {
+              title: {
+                display: true,
+                text: 'pokemon stats'
+              }
+            },
+            scales: {
+              x: { min: 0, max: 635 }
             }
-          },
-          scales: {
-            x: { min: 0, max: 635 }
-          }
-        }" :data="chartData" ref="chart-bar" />
+          }" :data="chartData" ref="chart-bar" />
+        </section>
       </section>
     </section>
-  </section>
-</nuxt-layout></template>
+  </nuxt-layout>
+</template>

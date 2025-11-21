@@ -44,6 +44,11 @@ export const infoTools: Tools[] = [
     description: 'show top 100 crypto coins using coingecko api'
   },
   {
+    name: 'tcg pocket card info',
+    versionAdded: '(npm) 1.3.9',
+    description: 'show a pokemon card detail'
+  },
+  {
     name: 'bitly info',
     versionAdded: '(npm) 1.1.4',
     description: 'using bitly api for reveal link'

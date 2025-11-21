@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { format } from 'timeago.js'
-import { type GithubSchema } from '~~/utils/interfaces/githubInterface'
+import { type GithubSchema } from '#shared/interfaces/githubInterface'
 
 useHead({
   title: 'github info',

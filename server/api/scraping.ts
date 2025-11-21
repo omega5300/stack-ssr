@@ -2,7 +2,7 @@ import { load } from 'cheerio'
 import type {
   HashFunctions,
   WebScraping
-} from '~~/utils/interfaces/scrapingInterface'
+} from '#shared/scrapingInterface'
 
 type Scraping= {
   website: string

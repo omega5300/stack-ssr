@@ -1,6 +1,6 @@
 <template>
   <main class="content">
-    <slot />
+    <slot></slot>
   </main>
   <stack-tools :pages="webPages" />
 </template>

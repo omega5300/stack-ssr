@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /* __placeholder__ */
-import type { MovieSchema, Movie } from '~~/utils/interfaces/movieInterface';
+import type { MovieSchema, Movie } from '#shared/interfaces/movieInterface';
 
 useHead({
   title: 'movie info',
@@ -28,7 +28,7 @@ const searchMovies = async () => {
   }
 
   try {
-    const data: MovieSchema = await $fetch('https://api.themoviedb.org/3/search/movie', {
+    const data = await $fetch<MovieSchema>('https://api.themoviedb.org/3/search/movie', {
       params: {
         api_key: config.public.movieToken,
         query: movieTitle.value

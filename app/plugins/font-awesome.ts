@@ -13,21 +13,21 @@ import {
   faSpider, faTerminal, faCode, faInfo, faHome,
   faGaugeMed, faSearch, faWallet, faLock, faHandSpock, 
   faFileCode, faFilm, faDice, faRefresh, faClipboard,
-  faGlobe, faGamepad, faWandMagic,
-  faHeart
+  faGlobe, faGamepad, faWandMagic, faHeart,
+  faCircle,
 } from '@fortawesome/free-solid-svg-icons'
 
 // brand icons
 import { 
   faGithub, faInstagram, faTiktok, 
   faCodepen, faYoutube, faTwitch, faCss3, 
-  faDeezer
+  faDeezer,
 } from '@fortawesome/free-brands-svg-icons'
 
 // lib icons
 const icons = [
   // common icons
-  faThumbsUp, faUsersGear, faHome, faGlobe, faWandMagic,
+  faThumbsUp, faUsersGear, faHome, faGlobe, faWandMagic, faCircle,
   // brand icons
   faGithub, faInstagram, faTiktok, faCodepen, faYoutube, faTwitch,
   faCss3, faDeezer,

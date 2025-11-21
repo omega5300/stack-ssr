@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /* __placeholder__ */
-import type { Anime, AnimePagination } from '~~/utils/interfaces/animeInterface';
+import type { Anime, AnimePagination } from '#shared/interfaces/animeInterface';
 
 useHead({
   title: 'anime search',
@@ -20,7 +20,7 @@ const animeSearch = async () => {
   if(!anime.value) return alertMsg('this field is required', 'alert-warn')
   
   try {
-    const animeSchema: AnimePagination = await $fetch('https://api.jikan.moe/v4/anime', {
+    const animeSchema = await $fetch<AnimePagination>('https://api.jikan.moe/v4/anime', {
       params: { q: anime.value }
     })
     animeList.value = animeSchema.data
