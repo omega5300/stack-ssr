@@ -41,6 +41,18 @@ body {
   display: var(--dark-icon-display);
 }
 
+.stations {
+  @apply h-[50vh] max-w-4/5 divide-y mx-auto overflow-y-scroll;
+  
+  & li {
+    @apply pl-2 flex items-center space-x-4 rtl:space-x-reverse;
+  }
+
+  & button {
+    @apply rounded-full cursor-pointer;
+  }
+}
+
 .page-title {
   @apply font-extrabold text-center text-lg;
 }
@@ -150,6 +162,15 @@ body {
 /* buttons */
 .btns {
   @apply grid-cols-2 mt-2 gap-3;
+}
+
+.fab-btn {
+  @apply fixed right-5 bottom-14 rounded-full;
+
+  button {
+    @apply w-10 h-10 cursor-pointer;
+    color: var(--danger);
+  }
 }
 
 .btn {

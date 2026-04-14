@@ -26,7 +26,7 @@ export default defineNuxtConfig({
 
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
-    '~/assets/css/main.css',
+    './app/assets/css/main.css',
   ],
 
   vite: {

@@ -14,7 +14,7 @@ import {
   faGaugeMed, faSearch, faWallet, faLock, faHandSpock, 
   faFileCode, faFilm, faDice, faRefresh, faClipboard,
   faGlobe, faGamepad, faWandMagic, faHeart,
-  faCircle,
+  faCircle, faHatWizard, faPlay, faPause
 } from '@fortawesome/free-solid-svg-icons'
 
 // brand icons
@@ -34,9 +34,11 @@ const icons = [
   // tools icons
   faVideoCamera, faSpider, faTerminal, faCode, faInfo, faGaugeMed, 
   faSearch, faWallet, faLock, faHandSpock, faFileCode, faFilm,
-  faGamepad, faHeart,
+  faGamepad, faHeart, faHatWizard,
   // password generator icons
-  faDice, faRefresh, faClipboard
+  faDice, faRefresh, faClipboard,
+  // radio stations icons
+  faPlay, faPause,
 ]
 
 // config

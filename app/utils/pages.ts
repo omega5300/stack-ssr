@@ -24,6 +24,10 @@ const mainPages: Link[] = [
     path: '/quotes'
   },
   {
+    app: 'radio',
+    path: '/stations'
+  },
+  {
     app: 'about',
     path: '/about'
   }
@@ -153,6 +157,11 @@ const utilityPages: Tools[] = [
     path: '/utility/poker',
     icon: ['fas', 'heart'],
   },
+  {
+    app: 'magic ball',
+    path: '/utility/magicBall',
+    icon: ['fas', 'hat-wizard']
+  }
 ]
 
 export {
