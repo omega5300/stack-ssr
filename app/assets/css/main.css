@@ -314,7 +314,7 @@ body {
 }
 
 .list-item__figure {
-  @apply flex-shrink-0;
+  @apply shrink-0;
 }
 
 .list-item__poster {
@@ -419,6 +419,36 @@ body {
 .about-card {
   height: fit-content;
 }
+
+/* shortwave styles */
+.shortwave-container {
+  @apply relative mt-2 h-[43vh] overflow-y-auto  shadow-xs border;
+}
+
+.shortwave-table {
+  @apply w-full text-sm text-left rtl:text-right;
+}
+
+.shortwave-table-head {
+  @apply border-b;
+}
+
+.shortwave-table-col {
+  @apply px-6 py-3 font-medium;
+}
+
+.shortwave-table-body {
+  @apply border-b;
+
+  & th {
+    @apply px-6 py-4 font-medium whitespace-nowrap;
+  }
+
+  & td {
+    @apply px-6 py-4;
+  }
+}
+
 
 @keyframes blink {
   from { opacity: 0; }

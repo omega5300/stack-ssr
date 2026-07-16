@@ -57,6 +57,11 @@ export const infoTools: Tools[] = [
     name: 'bundlephobia info',
     versionAdded: '(npm) 1.2.3',
     description: 'using the bundlephobia web for search npm package info'
+  },
+  {
+    name: 'shortwave list',
+    versionAdded: '(npm) 1.4.3',
+    description: 'get of shortwave list using of shortwave.live web scraping',
   }
 ]
 

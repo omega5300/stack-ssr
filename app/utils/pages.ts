@@ -95,6 +95,11 @@ const infoPages: Tools[] = [
     app: 'bundlephobia info',
     path: '/info/bundlephobia',
     icon: ['fas', 'file-code']
+  },
+  {
+    app: "shortwave list",
+    path: "/info/shortwave",
+    icon: ['fas', 'radio'],
   }
 ]
 

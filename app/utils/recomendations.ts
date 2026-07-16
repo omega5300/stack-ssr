@@ -61,9 +61,4 @@ export const twitchRecomendations: SocialMedia[] = [
     logo: twitch,
     link: "https://www.twitch.tv/dannyagii"
   },
-  {
-    name: "miss stepfi polestar",
-    logo: twitch,
-    link: "https://www.twitch.tv/stepfi_polestar"
-  },
 ];

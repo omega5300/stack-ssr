@@ -5,6 +5,13 @@ type detailsVersion = {
 
 export const versionsNotes: detailsVersion[] = [
   {
+    version: '2.8.0',
+    details: `
+    added:
+      1. shortwave freq scheudle (npm 1.4.3)
+    `
+  },
+  {
     version: '2.7.0',
     details: `
     added: 

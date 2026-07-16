@@ -14,7 +14,8 @@ import {
   faGaugeMed, faSearch, faWallet, faLock, faHandSpock, 
   faFileCode, faFilm, faDice, faRefresh, faClipboard,
   faGlobe, faGamepad, faWandMagic, faHeart,
-  faCircle, faHatWizard, faPlay, faPause
+  faCircle, faHatWizard, faPlay, faPause,
+  faRadio
 } from '@fortawesome/free-solid-svg-icons'
 
 // brand icons
@@ -38,12 +39,16 @@ const icons = [
   // password generator icons
   faDice, faRefresh, faClipboard,
   // radio stations icons
-  faPlay, faPause,
+  faPlay, faPause, faRadio
 ]
 
 // config
 config.autoAddCss = false
 library.add(...icons)
+
+defineNuxtPlugin({
+
+})
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('stack-fa', FontAwesomeIcon)

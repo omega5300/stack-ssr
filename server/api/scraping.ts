@@ -1,11 +1,11 @@
 import { load } from 'cheerio'
 
-type Scraping= {
+type Scraping = {
   website: string
   opt: string
 }
 
-export default defineEventHandler<{query: Scraping}>(async (event) => {
+export default defineEventHandler<{ query: Scraping }>(async (event) => {
   const { website, opt } = getQuery(event)
   try {
     const data = await (
